@@ -1,10 +1,4 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
+import { redirect } from "next/navigation";
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <h1 className={styles.title}>Welcome to My Next.js App</h1>
-    </div>
-  );
+  return redirect("/login"); // Redirect to the login page by default
 }
