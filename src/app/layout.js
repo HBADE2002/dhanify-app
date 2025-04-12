@@ -1,6 +1,5 @@
 import "./globals.css";
-import Navbar from "./component/Navbar";
-import Footer from "./component/Footer";
+
 import { Roboto } from "next/font/google";
 import { ThemeProvider } from "@mui/material/styles";
 import ThemeRegistry from "./component/ThemeRegistry";
@@ -18,13 +17,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <>
-      <Navbar />
       <html lang="en">
         <body className={roboto.className}>
           <ThemeRegistry>{children}</ThemeRegistry>
         </body>
       </html>
-      <Footer />
     </>
   );
 }
