@@ -1,0 +1,17 @@
+.loginRectangle {
+  border: 7px solid #142032;
+  margin: auto;
+  height: 300px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.loginPageImage {
+  margin: 0 auto;
+  /* height: 200px; */
+  aspect-ratio: 16 / 9;
+  width: 80%;
+  background-image: url("/assets/group_finance_img.jpg");
+  background-size: cover;
+  background-position: center;
+}
